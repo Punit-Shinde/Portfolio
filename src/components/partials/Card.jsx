@@ -16,7 +16,7 @@ const Card = ({ index, title, icon }) => {
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary rounded-[20px] py-5 px-5 min-h-[fit] flex justify-evenly items-center flex-col'
+        className='bg-tertiary rounded-[20px] py-5 px-5 min-h-[fit] flex justify-evenly items-center'
       >
         <img
           src={icon}

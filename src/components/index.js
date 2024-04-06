@@ -2,8 +2,10 @@
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 import About from "./About";
+import Experience from "./Experience";
 import Tech from "./Tech";
-import Works from "./Works";
+import WorksWeb from "./WorksWeb";
+import WorksMob from "./WorksMob";
 import Contact from "./Contact";
 
 
@@ -11,8 +13,10 @@ import Contact from "./Contact";
 export {
   Hero,
   Navbar,
+  Experience,
   About,
   Tech,
-  Works,
+  WorksWeb,
+  WorksMob,
   Contact,
 };
