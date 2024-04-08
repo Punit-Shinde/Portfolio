@@ -4,6 +4,32 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  /* background: #d9d0e0f6;  */
+  background: #4d2e8f; 
+  border-left: rgba(128, 128, 128, 0.393) solid 2px; 
+  border-right: rgba(128, 128, 128, 0.393) solid 2px; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #804dee; 
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -93,6 +119,22 @@
     to top,
     #2f80ed,
     #56ccf2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.yellow-text-gradient {
+  background: #d8ec00; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #d8ec00,
+    #ecf776,
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #d8ec00,
+    #ecf776,
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

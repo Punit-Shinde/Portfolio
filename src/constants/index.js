@@ -27,6 +27,12 @@ import {
   carrent,
   jobit,
   tripguide,
+  chatterBox,
+  stepInStyle,
+  flexForce,
+  dishDelight,
+  pinClone,
+  devilDelicacy
 } from "../assets";
 
 export const navLinks = [
@@ -71,8 +77,8 @@ const experiences = [
   {
     title: "Basic Web Development",
     company_name: "HTML, CSS, JavaScript",
-    icon: html,
-    iconBg: "#E6DEDD",
+    icon: starbucks,
+    iconBg: "#d9d0e0f7",
     date: "Phase 1",
     points: [
       "Introduction to Web Development: Starting with HTML, CSS, and JavaScript lays the foundation of understanding how websites are structured and styled.",
@@ -86,7 +92,7 @@ const experiences = [
     title: "Advanced Frontend Development",
     company_name: "React, Tailwind CSS, Redux",
     icon: reactjs,
-    iconBg: "#383E56",
+    iconBg: "#786982f7",
     date: "Phase 2",
     points: [
       "Mastering React: Dive deep into React to understand components, props, state, and lifecycle methods. Learn how to build reusable UI components and manage application state efficiently.",
@@ -100,7 +106,7 @@ const experiences = [
     title: "Full Stack Development",
     company_name: "MERN Stack",
     icon: mongodb,
-    iconBg: "#E6DEDD",
+    iconBg: "#d9d0e0f7",
     date: "Phase 3",
     points: [
       "Backend Development with Node.js and Express: Dive into server-side development with Node.js and Express.js to build RESTful APIs. Learn about routing, middleware, and database integration.",
@@ -114,7 +120,7 @@ const experiences = [
     title: "Mobile Development",
     company_name: "React Native",
     icon: meta,
-    iconBg: "#383E56",
+    iconBg: "#786982f7",
     date: "Phase 4",
     points: [
       "Introduction to React Native: Understand the basics of React Native framework for building cross-platform mobile applications using JavaScript and React.",
@@ -145,6 +151,10 @@ const technologies = [
   },
   {
     title: "React JS",
+    icon: reactjs,
+  },
+  {
+    title: "React-Native",
     icon: reactjs,
   },
   {
@@ -200,153 +210,148 @@ const technologies = [
 
 const webProjects = [
   {
-    name: "Car Rent",
+    name: "Step In Style",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web-based ecommerce platform that allows users to search footware view details, login/register, place order, pay for it and also update the profile in realtime, providing a efficient ecommerce solution.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
       {
         name: "mongodb",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "express",
         color: "pink-text-gradient",
       },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
+        name: "nodejs",
+        color: "orange-text-gradient",
+      }    
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: stepInStyle,
+    source_code_link: "https://github.com/Punit-Shinde/MERN-StepInStyle",
   },
   {
-    name: "Trip Guide",
+    name: "Chatter Box",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Real-time chat app that allows users to login/register and search other users and chat with various users in realtime, providing a convenient and efficient solution for conversation needs.",
     tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
       {
         name: "mongodb",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "express",
         color: "pink-text-gradient",
       },
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "orange-text-gradient",
+      },     
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: chatterBox,
+    source_code_link: "https://github.com/Punit-Shinde/MERN-ChatterBox",
   },
   {
-    name: "Job IT",
+    name: "Pinterest-Clone",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "The Pinterest Clone project, a web application inspired by Pinterest's layout and functionality like - User Authentication, Image Upload, board creation, explore feeds and responsive design",
+    tags: [
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "express",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "ejs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "orange-text-gradient",
+      },     
+    ],
+    image: pinClone,
+    source_code_link: "https://github.com/Punit-Shinde/MERN-ChatterBox",
+  },
+  {
+    name: "Dish Delight",
+    description:
+      "Web-based recipe app that allows users to search and learn recipes of different cuisines from all around the world or just surf through the app via categories to discover new dishes according to their taste.", 
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
-        color: "green-text-gradient",
+        name: "javascript",
+        color: "yellow-text-gradient",
       },
       {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
+        name: "rapid-api",
+        color: "blue-text-gradient",
+      },  
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: dishDelight,
+    source_code_link: "https://github.com/Punit-Shinde/DishDelight",
   },
   {
-    name: "Trip Guide",
+    name: "Flex Force",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Web-based platform that allows users to search workouts either by name or body part which it targets and details of the workout how to do it as well as its targeted muscles. It also provide related youtube videos",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
-        color: "green-text-gradient",
+        name: "javascript",
+        color: "yellow-text-gradient",
       },
       {
-        name: "css",
-        color: "pink-text-gradient",
+        name: "rapid-api",
+        color: "blue-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: flexForce,
+    source_code_link: "https://github.com/Punit-Shinde/FlexForce",
   },
+  
+  
+  
 ];
+
 const mobProjects = [
   {
-    name: "Car Rent",
+    name: "Devil Delicacy",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Mobile based platform that allows users to search, bid, and view devil fruits details that are available for the auction.",
     tags: [
       {
-        name: "react",
+        name: "react-native",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
+        name: "javascript",
+        color: "yellow-text-gradient",
       },
       {
-        name: "tailwind",
-        color: "pink-text-gradient",
+        name: "css",
+        color: "blue-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: devilDelicacy,
+    source_code_link: "https://github.com/Punit-Shinde/DevilDelicacy",
   },
 ];
 

@@ -127,9 +127,9 @@ const Contact = () => {
 
     </div>
      <div className="flex justify-between md:ml-10" > 
-     <img src={linkedin} onClick={() => window.location.href="https://www.youtube.com/"} className={`${styles.contactLinkActive}`}/>
-     <img src={githubb} onClick={() => window.location.href="https://www.youtube.com/"} className={`${styles.contactLinkActive}`} />
-     <img src={behance} onClick={() => window.location.href=""} className={`${styles.contactLinkInactive}`} />
+     <img src={linkedin} onClick={() => window.location.href="https://www.linkedin.com/in/punit-shinde/"} className={`${styles.contactLinkActive}`}/>
+     <img src={githubb} onClick={() => window.location.href="https://github.com/Punit-Shinde"} className={`${styles.contactLinkActive}`} />
+     <img src={behance} onClick={() => window.location.href="https://www.behance.net/punitshinde"} className={`${styles.contactLinkInactive}`} />
      </div>
 
      <div

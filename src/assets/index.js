@@ -37,6 +37,13 @@ import behance from "./behance.png";
 import githubb from "./githubb.png";
 import linkedin from "./linkedin.png";
 
+import chatterBox from "./projects/chatterBox.png";
+import stepInStyle from "./projects/stepInStyle.png";
+import flexForce from "./projects/flexForce.png";
+import dishDelight from "./projects/dishDelight.png";
+import pinClone from "./projects/pinClone.png";
+import devilDelicacy from "./projects/native/devilDelicacy.png";
+
 export {
   logo,
   backend,
@@ -72,5 +79,10 @@ export {
   behance,
   linkedin,
   githubb,
-
+  chatterBox,
+  stepInStyle,
+  flexForce,
+  dishDelight,
+  pinClone,
+  devilDelicacy,
 };
