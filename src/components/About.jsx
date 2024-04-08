@@ -47,7 +47,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with  some experience under my belt with React-Native, and I'm familiar with frameworks like React, Node.js, and Three.js. Although I'm still learning the ropes, I'm eager to work closely with clients to create solutions that are efficient, scalable, and user-friendly. Let's team up and turn your ideas into reality!
+        I'm a skilled software developer with  some experience under my belt with React-Native, and I'm familiar with frameworks like React,Express.js and Node.js. Although I'm still learning the ropes, I'm eager to work closely with clients to create solutions that are efficient, scalable, and user-friendly. Let's team up and turn your ideas into reality!
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
