@@ -24,7 +24,7 @@ const Tech = () => {
         I have a diverse background in web / app development and design with skills in HTML5, CSS3, JavaScript,  ReactJS, Nodejs and tools like Vs-Code, Figma, Filmora, PhotoShop and many more.
       </motion.p>
 
-    <div className='mt-20 flex flex-wrap gap-10'>
+    <div className='mt-20 flex flex-wrap justify-center gap-10'>
       {technologies.map((technology, index) => (
         <div className='w-38 h-28' key={index}>
           <Card icon={technology.icon} title={technology.title} />

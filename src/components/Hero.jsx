@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 
-import HeroImage from "./partials/HeroImage";
+// import HeroImage from "./partials/HeroImage";
 
 const Hero = () => {
   return (
@@ -26,7 +26,7 @@ const Hero = () => {
             with a passion for sleek user interfaces.
           </p>
           <button
-            onClick={() => (window.location.href = "https://www.youtube.com/")}
+            onClick={() => (window.location.href = "https://drive.google.com/file/d/1uzVY9UuUXjwrnkurI41YcAhq3GJc24Rj/view?usp=drive_link")}
             className="mt-8 px-3 py-2 rounded-md bg-[#915EFF] font-semibold hover:bg-transparent hover:border-2"
           >
             Get My Resume
@@ -34,7 +34,13 @@ const Hero = () => {
         </div>
       </div>
 
-      <HeroImage />
+      <div className='sm:w-[100%] top-96 absolute md:w-[50%] md:top-[20%] md:right-[5%] '>
+        <img
+          src={"/heroImage.png"}
+          alt=""
+          style={{ width: "100%", height: "auto" }}
+        />
+      </div>
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
