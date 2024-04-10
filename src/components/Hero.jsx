@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
+import {heroImg} from "../assets"
 
 // import HeroImage from "./partials/HeroImage";
 
@@ -14,7 +15,7 @@ const Hero = () => {
           <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
 
-        <div>
+        <div className="z-10">
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className="text-[#915EFF]">Punit Shinde</span>
           </h1>
@@ -34,10 +35,11 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className='sm:w-[100%] top-96 absolute md:w-[50%] md:top-[20%] md:right-[5%] '>
+      <div className='sm:w-[100%] top-96 absolute md:w-[50%] md:top-[20%] md:right-[5%] -z-99'>
         <img
-          src={"/heroImage.png"}
-          alt=""
+        className="-z-9"
+          src={heroImg}
+          alt="heroImg"
           style={{ width: "100%", height: "auto" }}
         />
       </div>

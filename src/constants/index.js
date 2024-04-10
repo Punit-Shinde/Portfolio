@@ -1,8 +1,8 @@
 import {
   mobile,
   backend,
-  creator,
   web,
+  fullstack,
   javascript,
   html,
   css,
@@ -20,13 +20,8 @@ import {
   express,
   filmora,
   photoshop,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
+  webdev,
+  r_native,
   chatterBox,
   stepInStyle,
   flexForce,
@@ -60,12 +55,16 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Mobile Developer",
     icon: mobile,
   },
   {
     title: "Backend Developer",
     icon: backend,
+  },
+  {
+    title: "Fullstack Developer",
+    icon: fullstack,
   },
 ];
 
@@ -73,7 +72,7 @@ const experiences = [
   {
     title: "Basic Web Development",
     company_name: "HTML, CSS, JavaScript",
-    icon: starbucks,
+    icon: webdev,
     iconBg: "#d9d0e0f7",
     date: "Phase 1",
     points: [
@@ -115,7 +114,7 @@ const experiences = [
   {
     title: "Mobile Development",
     company_name: "React Native",
-    icon: meta,
+    icon: r_native,
     iconBg: "#786982f7",
     date: "Phase 4",
     points: [

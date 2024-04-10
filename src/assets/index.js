@@ -1,6 +1,6 @@
 import logo from "/logo.png";
 import backend from "./backend.png";
-import creator from "./creator.png";
+import fullstack from "./fullstack.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
@@ -23,16 +23,15 @@ import photoshop from "./tech/photoshop.png";
 import filmora from "./tech/filmora.png";
 import bootstrap from "./tech/bootstrap.png";
 import express from "./tech/express.png";
+import webdev from "./tech/webdev.png"
+import r_native from "./tech/react_native.png"
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import heroImg from "./heroImg.png";
 import behance from "./behance.png";
 import githubb from "./githubb.png";
 import linkedin from "./linkedin.png";
@@ -46,8 +45,9 @@ import devilDelicacy from "./projects/native/devilDelicacy.png";
 
 export {
   logo,
+  heroImg,
   backend,
-  creator,
+  fullstack,
   mobile,
   web,
   github,
@@ -69,10 +69,8 @@ export {
   express,
   filmora,
   photoshop,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
+  webdev,
+  r_native,
   carrent,
   jobit,
   tripguide,
