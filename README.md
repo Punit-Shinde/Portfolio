@@ -25,7 +25,7 @@ You can view my portfolio live by clicking the button below:
 
 Here are some screenshots of my portfolio:
 
-![Screenshot 1](screenshots/landpage.png)
+![Screenshot 1](screenshots/home.png)
 
 ![Screenshot 2](screenshots/about.png)
 
