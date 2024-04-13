@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import {heroImg} from "../assets"
 
-// import HeroImage from "./partials/HeroImage";
 
 const Hero = () => {
   return (

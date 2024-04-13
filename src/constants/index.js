@@ -27,7 +27,7 @@ import {
   flexForce,
   dishDelight,
   pinClone,
-  devilDelicacy
+  devilDelicacy,
 } from "../assets";
 
 export const navLinks = [
@@ -76,11 +76,10 @@ const experiences = [
     iconBg: "#d9d0e0f7",
     date: "Phase 1",
     points: [
-      "Introduction to Web Development: Starting with HTML, CSS, and JavaScript lays the foundation of understanding how websites are structured and styled.",
-      "Building Static Websites: Focus on creating static web pages using HTML and CSS. Learn about layout, styling, and basic interactivity using JavaScript.",
-      "Making Sites Dynamic with JavaScript: Dive deeper into JavaScript to add dynamic functionality to web pages. This involves DOM manipulation, event handling, and basic animations.",
-      "Responsive Design: Understand responsive web design principles using CSS media queries and flexible layouts to ensure websites work well on different devices and screen sizes.",
-      "Introduction to Frontend Frameworks: Get introduced to frontend frameworks like React and Vue.js to understand their importance in building modern web applications.",
+      "Introduction to Web Development: Begin with HTML, CSS, and JavaScript to understand the structure, style, and interactivity of web pages.",
+      "uilding Static Websites: Focus on creating static web pages using HTML and CSS, learning layout and basic styling.",
+      "Dynamic Web Development: Dive into JavaScript to add dynamic functionality to web pages, including DOM manipulation and event handling.",
+      "Responsive Design: Understand responsive web design principles to ensure websites adapt well to different devices and screen sizes.",
     ],
   },
   {
@@ -90,11 +89,10 @@ const experiences = [
     iconBg: "#786982f7",
     date: "Phase 2",
     points: [
-      "Mastering React: Dive deep into React to understand components, props, state, and lifecycle methods. Learn how to build reusable UI components and manage application state efficiently.",
-      "Styling with Tailwind CSS: Explore Tailwind CSS for utility-first styling approach, which enhances productivity and maintains a consistent design system.",
-      "State Management with Redux: Understand the principles of Redux for managing complex application states. Learn about actions, reducers, and the Redux store.",
-      "Exploring React Hooks: Embrace the power of React Hooks for managing stateful logic and side effects within functional components, improving code readability and reusability.",
-      "API Integration: Learn how to integrate APIs with React applications to fetch and display dynamic data. Understand concepts like asynchronous JavaScript and handling API responses.",
+      "Mastering React: Deepen understanding of React, learning about components, props, state, and lifecycle methods.",
+      "Styling with Tailwind CSS: Explore Tailwind CSS for efficient and consistent styling of UI components.",
+      "State Management with Redux: Learn Redux for managing application state in complex React applications.",
+      "API Integration: Understand how to integrate APIs with React applications to fetch and display dynamic data.",
     ],
   },
   {
@@ -104,11 +102,10 @@ const experiences = [
     iconBg: "#d9d0e0f7",
     date: "Phase 3",
     points: [
-      "Backend Development with Node.js and Express: Dive into server-side development with Node.js and Express.js to build RESTful APIs. Learn about routing, middleware, and database integration.",
-      "Working with Databases (MongoDB): Explore MongoDB as a NoSQL database solution. Learn about CRUD operations, schema design, and integrating MongoDB with Express.js.",
-      "Building Full Stack Applications: Combine frontend (React) and backend (Node.js, Express.js, MongoDB) to create full-stack web applications. Understand the flow of data between client and server.",
-      "Authentication and Authorization: Learn about implementing user authentication and authorization mechanisms using JWT (JSON Web Tokens) and sessions in MERN stack applications.",
-      "Deployment and Scalability: Explore various deployment options for MERN stack applications, including cloud platforms like Heroku and AWS. Understand scalability considerations for production environments.",
+      "Backend Development with Node.js and Express: Learn server-side development with Node.js and Express.js to build RESTful APIs.",
+      "Working with Databases (MongoDB): Explore MongoDB for NoSQL database solutions and integrate it with Express.js.",
+      "Full Stack Applications: Combine frontend (React) and backend (Node.js, Express.js, MongoDB) to create full-stack web applications.",
+      "Authentication and Deployment: Implement user authentication and deploy MERN stack applications to production environments.",
     ],
   },
   {
@@ -118,11 +115,10 @@ const experiences = [
     iconBg: "#786982f7",
     date: "Phase 4",
     points: [
-      "Introduction to React Native: Understand the basics of React Native framework for building cross-platform mobile applications using JavaScript and React.",
-      "Components and Navigation: Learn about React Native components and navigation libraries for building mobile UIs and navigating between screens.",
-      "Accessing Device Features: Explore how to access device features such as camera, geolocation, and sensors using React Native APIs and third-party libraries.",
-      "State Management in React Native: Apply state management techniques like Context API or Redux for managing complex application states in React Native apps.",
-      "Building and Publishing Apps: Learn about the process of building, testing, and publishing React Native apps to app stores for both iOS and Android platforms.",
+      "Introduction to React Native: Begin with React Native framework for building cross-platform mobile applications.",
+      "Components and Navigation: Learn about React Native components and navigation libraries for building mobile UIs.",
+      "Accessing Device Features: Explore accessing device features like camera and geolocation using React Native APIs.",
+      "State Management and Publishing: Apply state management techniques and publish React Native apps to app stores for iOS and Android platforms.",
     ],
   },
 ];
@@ -150,7 +146,7 @@ const technologies = [
   },
   {
     title: "React-Native",
-    icon: reactjs,
+    icon: r_native,
   },
   {
     title: "Tailwind",
@@ -224,7 +220,7 @@ const webProjects = [
       {
         name: "nodejs",
         color: "orange-text-gradient",
-      }    
+      },
     ],
     image: stepInStyle,
     source_code_link: "https://github.com/Punit-Shinde/MERN-StepInStyle",
@@ -249,7 +245,7 @@ const webProjects = [
       {
         name: "nodejs",
         color: "orange-text-gradient",
-      },     
+      },
     ],
     image: chatterBox,
     source_code_link: "https://github.com/Punit-Shinde/MERN-ChatterBox",
@@ -274,7 +270,7 @@ const webProjects = [
       {
         name: "nodejs",
         color: "orange-text-gradient",
-      },     
+      },
     ],
     image: pinClone,
     source_code_link: "https://github.com/Punit-Shinde/MERN-ChatterBox",
@@ -282,7 +278,7 @@ const webProjects = [
   {
     name: "Dish Delight",
     description:
-      "Web-based recipe app that allows users to search and learn recipes of different cuisines from all around the world or just surf through the app via categories to discover new dishes according to their taste.", 
+      "Web-based recipe app that allows users to search and learn recipes of different cuisines from all around the world or just surf through the app via categories to discover new dishes according to their taste.",
     tags: [
       {
         name: "react",
@@ -295,7 +291,7 @@ const webProjects = [
       {
         name: "rapid-api",
         color: "blue-text-gradient",
-      },  
+      },
     ],
     image: dishDelight,
     source_code_link: "https://github.com/Punit-Shinde/DishDelight",
@@ -321,9 +317,6 @@ const webProjects = [
     image: flexForce,
     source_code_link: "https://github.com/Punit-Shinde/FlexForce",
   },
-  
-  
-  
 ];
 
 const mobProjects = [
