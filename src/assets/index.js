@@ -4,6 +4,7 @@ import fullstack from "./fullstack.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
+import live from "./live.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -26,11 +27,6 @@ import express from "./tech/express.png";
 import webdev from "./tech/webdev.png"
 import r_native from "./tech/react_native.png"
 
-
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
-
 import heroImg from "./heroImg.png";
 import behance from "./behance.png";
 import githubb from "./githubb.png";
@@ -51,6 +47,7 @@ export {
   mobile,
   web,
   github,
+  live,
   menu,
   close,
   css,
@@ -71,9 +68,6 @@ export {
   photoshop,
   webdev,
   r_native,
-  carrent,
-  jobit,
-  tripguide,
   behance,
   linkedin,
   githubb,

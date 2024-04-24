@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import {heroImg} from "../assets"
-
+import { heroImg } from "../assets";
 
 const Hero = () => {
   return (
@@ -15,18 +14,24 @@ const Hero = () => {
         </div>
 
         <div className="z-10">
-          <h1 className={`${styles.heroHeadText} text-white`}>
+          <h1 className={`${styles.heroHeadText} text-white select-none`}>
             Hi, I'm <span className="text-[#915EFF]">Punit Shinde</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-          I develop intuitive &
+          <p
+            className={`${styles.heroSubText} mt-2 text-white select-none-100`}
+          >
+            I develop intuitive &
             <br className="sm:block hidden" />
-            performant <span className="text-[#915EFF]">Web</span> & <span className="text-[#915EFF]">Mobile</span> apps.
+            performant <span className="text-[#915EFF]">Web</span> &{" "}
+            <span className="text-[#915EFF]">Mobile</span> apps.
             <br className="sm:block hidden" />
             with a passion for sleek user interfaces.
           </p>
           <button
-            onClick={() => (window.location.href = "https://drive.google.com/file/d/1uzVY9UuUXjwrnkurI41YcAhq3GJc24Rj/view?usp=drive_link")}
+            onClick={() =>
+              (window.location.href =
+                "https://drive.google.com/file/d/1uzVY9UuUXjwrnkurI41YcAhq3GJc24Rj/view?usp=drive_link")
+            }
             className="mt-8 px-3 py-2 rounded-md bg-[#915EFF] font-semibold hover:bg-transparent hover:border-2"
           >
             Get My Resume
@@ -34,9 +39,9 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className='sm:w-[100%] top-96 absolute md:w-[50%] md:top-[20%] md:right-[5%] -z-99'>
+      <div className="sm:w-[100%] top-96 absolute md:w-[50%] md:top-[20%] md:right-[5%] -z-99">
         <img
-        className="-z-9"
+          className="-z-9"
           src={heroImg}
           alt="heroImg"
           style={{ width: "100%", height: "auto" }}

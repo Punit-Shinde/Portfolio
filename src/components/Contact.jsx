@@ -70,7 +70,7 @@ const Contact = () => {
       >
         <motion.div
           variants={slideIn("left", "tween", 0.2, 1)}
-          className="flex-[0.65] bg-black-100 p-8 rounded-2xl"
+          className="flex-[0.65] bg-black-100 p-8 rounded-2xl select-none"
         >
           <p className={styles.sectionSubText}>Get in touch</p>
           <h3 className={styles.sectionHeadText}>Contact.</h3>
@@ -81,42 +81,48 @@ const Contact = () => {
             className="mt-12  flex flex-col gap-8 "
           >
             <label className="flex flex-col">
-              <span className="text-white font-medium mb-4">Your Name</span>
+              <span className="text-white select-none font-medium mb-4">
+                Your Name
+              </span>
               <input
                 type="text"
                 name="name"
                 value={form.name}
                 onChange={handleChange}
                 placeholder="What's your good name?"
-                className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+                className="bg-tertiary border-2 border-primary py-4 px-6 placeholder:text-secondary select-none text-white select-none rounded-lg outline-none focus:border-[#915EFF] font-medium"
               />
             </label>
             <label className="flex flex-col">
-              <span className="text-white font-medium mb-4">Your email</span>
+              <span className="text-white select-none font-medium mb-4">
+                Your email
+              </span>
               <input
                 type="email"
                 name="email"
                 value={form.email}
                 onChange={handleChange}
                 placeholder="What's your web address?"
-                className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+                className="bg-tertiary border-2 border-primary py-4 px-6 placeholder:text-secondary select-none text-white select-none rounded-lg outline-none focus:border-[#915EFF] font-medium"
               />
             </label>
             <label className="flex flex-col">
-              <span className="text-white font-medium mb-4">Your Message</span>
+              <span className="text-white select-none font-medium mb-4">
+                Your Message
+              </span>
               <textarea
                 rows={7}
                 name="message"
                 value={form.message}
                 onChange={handleChange}
                 placeholder="What you want to say?"
-                className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+                className="bg-tertiary border-2 border-primary py-4 px-6 placeholder:text-secondary select-none text-white select-none rounded-lg outline-none focus:border-[#915EFF] font-medium"
               />
             </label>
 
             <button
               type="submit"
-              className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
+              className="hover:bg-[#915EFF] border-2 border-primary py-3 px-8 rounded-xl outline-none w-fit text-white select-none font-bold shadow-md shadow-primary  bg-[#915EFF] hover:bg-transparent hover:border-2 hover:border-white"
             >
               {loading ? "Sending..." : "Send"}
             </button>
@@ -154,12 +160,12 @@ const Contact = () => {
           variants={slideIn("right", "tween", 0.2, 1)}
           className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px] md:ml-[70%] md:mt-[15%]"
         >
-          <h1 className={`${styles.footerSubText} text-white-100`}>
+          <h1 className={`${styles.footerSubText} text-white select-none-100`}>
             I'm actively seeking{" "}
             <span className="text-[#915EFF]">opportunities</span> to apply my
             skills and expertise.
           </h1>
-          <p className={`mt-2 text-white-100 md:ml-10`}>
+          <p className={`mt-2 text-white select-none-100 md:ml-10`}>
             Feel free to reach out via the{" "}
             <span className="text-[#915EFF]">contact form</span> or{" "}
             <span className="text-[#915EFF]">connect</span> with me on{" "}

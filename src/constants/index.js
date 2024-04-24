@@ -13,6 +13,7 @@ import {
   mongodb,
   git,
   github,
+  live,
   figma,
   api,
   bootstrap,
@@ -224,6 +225,7 @@ const webProjects = [
     ],
     image: stepInStyle,
     source_code_link: "https://github.com/Punit-Shinde/MERN-StepInStyle",
+    source_live_link: "",
   },
   {
     name: "Chatter Box",
@@ -249,6 +251,7 @@ const webProjects = [
     ],
     image: chatterBox,
     source_code_link: "https://github.com/Punit-Shinde/MERN-ChatterBox",
+    source_live_link: "https://mern-chatterbox.onrender.com/",
   },
   {
     name: "Pinterest-Clone",
