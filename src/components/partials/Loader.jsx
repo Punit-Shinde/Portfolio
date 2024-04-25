@@ -28,11 +28,11 @@ const Loader = () => {
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-primary">
       <div className="text-white select-none">
         <div className="line flex flex-col items-start justify-center gap-3vw sm:flex-row">
-          <div className="flex items-center justify-start gap-1vw">
-            <h5 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light">
+          <div className="flex w-36 items-center justify-start gap-1vw">
+            <h5 className="w-1/2 text-right text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light ">
               {number}
             </h5>
-            <h6 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light">
+            <h6 className="w-1/2 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light">
               <span className="text-[#915EFF]">/</span>100
             </h6>
           </div>
