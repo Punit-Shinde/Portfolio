@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { github, live } from "../assets";
 import { SectionWrapper } from "../hoc";
-import { webProjects } from "../constants";
+import { staticProjects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({
@@ -84,29 +84,22 @@ const ProjectCard = ({
   );
 };
 
-const WorksWeb = () => {
+const WorksStatic = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} select-none`}>My React work</p>
-        <h2 className={`${styles.sectionHeadText} select-none`}>
-          Web Apps.
-        </h2>
+        <p className={`${styles.sectionSubText} `}>HTML, CSS, Js</p>
+        <h2 className={`${styles.sectionHeadText}`}>Static Web-Sites.</h2>
       </motion.div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary select-none text-[17px] max-w-3xl leading-[30px]"
       >
-        Over time, I have refined my web development skills by exploring a
-        diverse range of technologies and tools. My journey began with creating
-        static web applications, which then progressed to dynamic ones.
-        Subsequently, I delved into various frameworks, culminating in the
-        development of full-stack MERN applications. This progression has
-        significantly enhanced my proficiency in web development.
+         My journey in web development began with the fundamentals: HTML, CSS, and JavaScript. I started by building static websites, focusing on crafting clean, efficient code and responsive, user-friendly designs. This solid foundation in the basics has been instrumental in my growth as a developer and continues to inform my work on more complex, dynamic applications.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-7">
-        {webProjects.map((project, index) => (
+        {staticProjects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
@@ -114,4 +107,4 @@ const WorksWeb = () => {
   );
 };
 
-export default SectionWrapper(WorksWeb, "work");
+export default SectionWrapper(WorksStatic, "work");

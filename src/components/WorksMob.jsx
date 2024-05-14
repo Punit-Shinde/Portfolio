@@ -28,7 +28,7 @@ const ProjectCard = ({
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full flex-col"
       >
         <div className="flex">
-          <div className="h-full w-1/3 mr-5">
+          <div className="relative group w-full h-[230px] hover:object-contain hover:scale-100 hover:cursor-zoom-out">
             <img
               src={image}
               alt="project_image"
@@ -94,7 +94,7 @@ const WorksMob = () => {
           My React-Native work
         </p>
         <h2 className={`${styles.sectionHeadText} select-none`}>
-          Mobile app Projects.
+          Mobile Apps.
         </h2>
       </motion.div>
       <motion.p

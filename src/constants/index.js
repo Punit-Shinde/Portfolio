@@ -29,6 +29,32 @@ import {
   dishDelight,
   pinClone,
   devilDelicacy,
+  cotton,
+  dribbble,
+  hotel,
+  obyss,
+  optical,
+  profession,
+  primier,
+  jacket,
+  hulu,
+  fashion,
+  explore,
+  // Certi
+  hrCssB,
+  hrJsB,
+  hrJsI,
+  hrPsB,
+  hrPsI,
+  hrPythonB,
+  hrReactB,
+  hrFrontDev,
+  SheryiansFD,
+  GithubCerti,
+  IandPTraining,
+  SoftDevMicro,
+  Nsdc,
+  InternShala,
 } from "../assets";
 
 export const navLinks = [
@@ -276,7 +302,8 @@ const webProjects = [
       },
     ],
     image: pinClone,
-    source_code_link: "https://github.com/Punit-Shinde/MERN-ChatterBox",
+    source_code_link: "",
+    source_live_link: "",
   },
   {
     name: "Dish Delight",
@@ -298,6 +325,7 @@ const webProjects = [
     ],
     image: dishDelight,
     source_code_link: "https://github.com/Punit-Shinde/DishDelight",
+    source_live_link: "https://punit-shinde.github.io/DishDelight/",
   },
   {
     name: "Flex Force",
@@ -319,6 +347,318 @@ const webProjects = [
     ],
     image: flexForce,
     source_code_link: "https://github.com/Punit-Shinde/FlexForce",
+    source_live_link: "https://flexforce.onrender.com",
+  },
+  {
+    name: "Flex Force",
+    description:
+      "Web-based platform that allows users to search workouts either by name or body part which it targets and details of the workout how to do it as well as its targeted muscles. It also provide related youtube videos",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "rapid-api",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: flexForce,
+    source_code_link: "https://github.com/Punit-Shinde/FlexForce",
+    source_live_link: "https://flexforce.onrender.com",
+  },
+];
+
+const staticProjects = [
+  {
+    name: "Step In Style",
+    description:
+      "Web-based ecommerce platform that allows users to search footware view details, login/register, place order, pay for it and also update the profile in realtime, providing a efficient ecommerce solution.",
+    tags: [
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "express",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: explore,
+    source_code_link: "https://github.com/Punit-Shinde/MERN-StepInStyle",
+    source_live_link: "",
+  },
+  {
+    name: "Step In Style",
+    description:
+      "Web-based ecommerce platform that allows users to search footware view details, login/register, place order, pay for it and also update the profile in realtime, providing a efficient ecommerce solution.",
+    tags: [
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "express",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: fashion,
+    source_code_link: "https://github.com/Punit-Shinde/MERN-StepInStyle",
+    source_live_link: "",
+  },
+  {
+    name: "Step In Style",
+    description:
+      "Web-based ecommerce platform that allows users to search footware view details, login/register, place order, pay for it and also update the profile in realtime, providing a efficient ecommerce solution.",
+    tags: [
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "express",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: hulu,
+    source_code_link: "https://github.com/Punit-Shinde/MERN-StepInStyle",
+    source_live_link: "",
+  },
+  {
+    name: "Step In Style",
+    description:
+      "Web-based ecommerce platform that allows users to search footware view details, login/register, place order, pay for it and also update the profile in realtime, providing a efficient ecommerce solution.",
+    tags: [
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "express",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: cotton,
+    source_code_link: "https://github.com/Punit-Shinde/MERN-StepInStyle",
+    source_live_link: "",
+  },
+  {
+    name: "Step In Style",
+    description:
+      "Web-based ecommerce platform that allows users to search footware view details, login/register, place order, pay for it and also update the profile in realtime, providing a efficient ecommerce solution.",
+    tags: [
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "express",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: jacket,
+    source_code_link: "https://github.com/Punit-Shinde/MERN-StepInStyle",
+    source_live_link: "",
+  },
+  {
+    name: "Step In Style",
+    description:
+      "Web-based ecommerce platform that allows users to search footware view details, login/register, place order, pay for it and also update the profile in realtime, providing a efficient ecommerce solution.",
+    tags: [
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "express",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: primier,
+    source_code_link: "https://github.com/Punit-Shinde/MERN-StepInStyle",
+    source_live_link: "",
+  },
+  {
+    name: "Step In Style",
+    description:
+      "Web-based ecommerce platform that allows users to search footware view details, login/register, place order, pay for it and also update the profile in realtime, providing a efficient ecommerce solution.",
+    tags: [
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "express",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: profession,
+    source_code_link: "https://github.com/Punit-Shinde/MERN-StepInStyle",
+    source_live_link: "",
+  },
+  {
+    name: "Step In Style",
+    description:
+      "Web-based ecommerce platform that allows users to search footware view details, login/register, place order, pay for it and also update the profile in realtime, providing a efficient ecommerce solution.",
+    tags: [
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "express",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: optical,
+    source_code_link: "https://github.com/Punit-Shinde/MERN-StepInStyle",
+    source_live_link: "",
+  },
+  {
+    name: "Step In Style",
+    description:
+      "Web-based ecommerce platform that allows users to search footware view details, login/register, place order, pay for it and also update the profile in realtime, providing a efficient ecommerce solution.",
+    tags: [
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "express",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: obyss,
+    source_code_link: "https://github.com/Punit-Shinde/MERN-StepInStyle",
+    source_live_link: "",
+  },
+  {
+    name: "Step In Style",
+    description:
+      "Web-based ecommerce platform that allows users to search footware view details, login/register, place order, pay for it and also update the profile in realtime, providing a efficient ecommerce solution.",
+    tags: [
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "express",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: hotel,
+    source_code_link: "https://github.com/Punit-Shinde/MERN-StepInStyle",
+    source_live_link: "",
+  },
+  {
+    name: "Step In Style",
+    description:
+      "Web-based ecommerce platform that allows users to search footware view details, login/register, place order, pay for it and also update the profile in realtime, providing a efficient ecommerce solution.",
+    tags: [
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "express",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: dribbble,
+    source_code_link: "https://github.com/Punit-Shinde/MERN-StepInStyle",
+    source_live_link: "",
   },
 ];
 
@@ -346,4 +686,63 @@ const mobProjects = [
   },
 ];
 
-export { services, technologies, experiences, webProjects, mobProjects };
+const certi =[
+  {
+    id: "101",
+    img: SheryiansFD
+  },
+  {
+    id: "102",
+    img: hrFrontDev
+  },
+  {
+    id: "103",
+    img: SoftDevMicro
+  },
+  {
+    id: "106",
+    img: GithubCerti
+  },
+  {
+    id: "107",
+    img: InternShala
+  },
+  {
+    id: "108",
+    img: hrFrontDev
+  },
+  {
+    id: "109",
+    img: Nsdc
+  },
+  {
+    id: "110",
+    img: hrCssB
+  },
+  {
+    id: "111",
+    img: hrJsB
+  },
+  {
+    id: "112",
+    img: hrJsI
+  },
+  {
+    id: "113",
+    img: hrPsB
+  },
+  {
+    id: "114",
+    img: hrPsI
+  },
+  {
+    id: "115",
+    img: hrPythonB
+  },
+  {
+    id: "116",
+    img:  hrReactB
+  }
+]
+
+export { services, technologies, experiences, webProjects,staticProjects, mobProjects, certi };
