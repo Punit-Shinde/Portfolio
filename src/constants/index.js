@@ -349,317 +349,142 @@ const webProjects = [
     source_code_link: "https://github.com/Punit-Shinde/FlexForce",
     source_live_link: "https://flexforce.onrender.com",
   },
-  {
-    name: "Flex Force",
-    description:
-      "Web-based platform that allows users to search workouts either by name or body part which it targets and details of the workout how to do it as well as its targeted muscles. It also provide related youtube videos",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "javascript",
-        color: "yellow-text-gradient",
-      },
-      {
-        name: "rapid-api",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: flexForce,
-    source_code_link: "https://github.com/Punit-Shinde/FlexForce",
-    source_live_link: "https://flexforce.onrender.com",
-  },
 ];
 
 const staticProjects = [
   {
-    name: "Step In Style",
+    name: "WonderLust",
     description:
-      "Web-based ecommerce platform that allows users to search footware view details, login/register, place order, pay for it and also update the profile in realtime, providing a efficient ecommerce solution.",
+      "Wanderlust Destinations website invites you to unleash your inner explorer and discover extraordinary experiences amidst captivating visuals and engaging narratives about the hidden jems of India.",
     tags: [
       {
-        name: "mongodb",
+        name: "html",
         color: "green-text-gradient",
       },
       {
-        name: "express",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "react",
+        name: "css",
         color: "blue-text-gradient",
       },
       {
-        name: "nodejs",
+        name: "javascript",
         color: "orange-text-gradient",
       },
     ],
     image: explore,
-    source_code_link: "https://github.com/Punit-Shinde/MERN-StepInStyle",
-    source_live_link: "",
+    source_code_link: "https://github.com/Punit-Shinde/Wanderlust-Destinations",
+    source_live_link: "https://punit-shinde.github.io/Wanderlust-Destinations/",
   },
   {
-    name: "Step In Style",
+    name: "Hulu Clone",
     description:
-      "Web-based ecommerce platform that allows users to search footware view details, login/register, place order, pay for it and also update the profile in realtime, providing a efficient ecommerce solution.",
+      "Indulge in the ultimate streaming experience with Hulu! Immerse yourself in a world of endless entertainment, from your favorite TV shows to blockbuster movies. Start your free trial today.",
     tags: [
       {
-        name: "mongodb",
+        name: "html",
         color: "green-text-gradient",
       },
       {
-        name: "express",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "react",
+        name: "css",
         color: "blue-text-gradient",
       },
       {
-        name: "nodejs",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: fashion,
-    source_code_link: "https://github.com/Punit-Shinde/MERN-StepInStyle",
-    source_live_link: "",
-  },
-  {
-    name: "Step In Style",
-    description:
-      "Web-based ecommerce platform that allows users to search footware view details, login/register, place order, pay for it and also update the profile in realtime, providing a efficient ecommerce solution.",
-    tags: [
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "express",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "nodejs",
+        name: "javascript",
         color: "orange-text-gradient",
       },
     ],
     image: hulu,
-    source_code_link: "https://github.com/Punit-Shinde/MERN-StepInStyle",
-    source_live_link: "",
+    source_code_link: "https://github.com/Punit-Shinde/Hulu-clone",
+    source_live_link: "https://punit-shinde.github.io/Hulu-clone/",
   },
   {
-    name: "Step In Style",
+    name: "Premier",
     description:
-      "Web-based ecommerce platform that allows users to search footware view details, login/register, place order, pay for it and also update the profile in realtime, providing a efficient ecommerce solution.",
+      "Explore the dynamic world of Premier Model Agency! Dive into a captivating blend of photography and films, where every frame tells a story. Navigate effortlessly through our website.",
     tags: [
       {
-        name: "mongodb",
+        name: "html",
         color: "green-text-gradient",
       },
       {
-        name: "express",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "react",
+        name: "css",
         color: "blue-text-gradient",
       },
       {
-        name: "nodejs",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: cotton,
-    source_code_link: "https://github.com/Punit-Shinde/MERN-StepInStyle",
-    source_live_link: "",
-  },
-  {
-    name: "Step In Style",
-    description:
-      "Web-based ecommerce platform that allows users to search footware view details, login/register, place order, pay for it and also update the profile in realtime, providing a efficient ecommerce solution.",
-    tags: [
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "express",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "nodejs",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: jacket,
-    source_code_link: "https://github.com/Punit-Shinde/MERN-StepInStyle",
-    source_live_link: "",
-  },
-  {
-    name: "Step In Style",
-    description:
-      "Web-based ecommerce platform that allows users to search footware view details, login/register, place order, pay for it and also update the profile in realtime, providing a efficient ecommerce solution.",
-    tags: [
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "express",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "nodejs",
+        name: "javascript",
         color: "orange-text-gradient",
       },
     ],
     image: primier,
-    source_code_link: "https://github.com/Punit-Shinde/MERN-StepInStyle",
-    source_live_link: "",
+    source_code_link: "https://github.com/Punit-Shinde/Premier/",
+    source_live_link: "https://punit-shinde.github.io/Premier/",
   },
   {
-    name: "Step In Style",
+    name: "Profession In Focus",
     description:
-      "Web-based ecommerce platform that allows users to search footware view details, login/register, place order, pay for it and also update the profile in realtime, providing a efficient ecommerce solution.",
+      "Explore the lives and works of talented professionals like Elena Morell, Ranveer Brar, and John Mayer through stunning imagery and insightful narratives of many more professionals.",
     tags: [
       {
-        name: "mongodb",
+        name: "html",
         color: "green-text-gradient",
       },
       {
-        name: "express",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "react",
+        name: "css",
         color: "blue-text-gradient",
       },
       {
-        name: "nodejs",
+        name: "javascript",
         color: "orange-text-gradient",
       },
     ],
     image: profession,
-    source_code_link: "https://github.com/Punit-Shinde/MERN-StepInStyle",
-    source_live_link: "",
+    source_code_link: "https://github.com/Punit-Shinde/Professions-in-Focus",
+    source_live_link: "https://punit-shinde.github.io/Professions-in-Focus/",
   },
   {
-    name: "Step In Style",
+    name: "Obys Agency",
     description:
-      "Web-based ecommerce platform that allows users to search footware view details, login/register, place order, pay for it and also update the profile in realtime, providing a efficient ecommerce solution.",
+      "Obys Agency presents a mesmerizing fusion of creativity and innovation. Dive into our world where design meets technology, and explore captivating web experiences crafted with passion and expertise",
     tags: [
       {
-        name: "mongodb",
+        name: "html",
         color: "green-text-gradient",
       },
       {
-        name: "express",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "react",
+        name: "css",
         color: "blue-text-gradient",
       },
       {
-        name: "nodejs",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: optical,
-    source_code_link: "https://github.com/Punit-Shinde/MERN-StepInStyle",
-    source_live_link: "",
-  },
-  {
-    name: "Step In Style",
-    description:
-      "Web-based ecommerce platform that allows users to search footware view details, login/register, place order, pay for it and also update the profile in realtime, providing a efficient ecommerce solution.",
-    tags: [
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "express",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "nodejs",
+        name: "javascript",
         color: "orange-text-gradient",
       },
     ],
     image: obyss,
-    source_code_link: "https://github.com/Punit-Shinde/MERN-StepInStyle",
-    source_live_link: "",
+    source_code_link: "https://github.com/Punit-Shinde/Obys-Agency-Clone",
+    source_live_link: "https://punit-shinde.github.io/Obys-Agency-Clone/",
   },
   {
-    name: "Step In Style",
+    name: "Hotel Odisej",
     description:
-      "Web-based ecommerce platform that allows users to search footware view details, login/register, place order, pay for it and also update the profile in realtime, providing a efficient ecommerce solution.",
+      "The Hotel Odisej - Mljet Island Hotel Website is a visually captivating and user-friendly platform designed to showcase the beauty and offerings of the Hotel Odisej located on Mljet Island, Croatia.",
     tags: [
       {
-        name: "mongodb",
+        name: "html",
         color: "green-text-gradient",
       },
       {
-        name: "express",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "react",
+        name: "css",
         color: "blue-text-gradient",
       },
       {
-        name: "nodejs",
+        name: "javascript",
         color: "orange-text-gradient",
       },
     ],
     image: hotel,
-    source_code_link: "https://github.com/Punit-Shinde/MERN-StepInStyle",
-    source_live_link: "",
+    source_code_link: "https://github.com/Punit-Shinde/Hotel-Odisej-Clone",
+    source_live_link: "https://punit-shinde.github.io/Hotel-Odisej-Clone/",
   },
-  {
-    name: "Step In Style",
-    description:
-      "Web-based ecommerce platform that allows users to search footware view details, login/register, place order, pay for it and also update the profile in realtime, providing a efficient ecommerce solution.",
-    tags: [
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "express",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "nodejs",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: dribbble,
-    source_code_link: "https://github.com/Punit-Shinde/MERN-StepInStyle",
-    source_live_link: "",
-  },
+
 ];
 
 const mobProjects = [
@@ -683,66 +508,75 @@ const mobProjects = [
     ],
     image: devilDelicacy,
     source_code_link: "https://github.com/Punit-Shinde/DevilDelicacy",
+    source_live_link: "",
   },
 ];
 
-const certi =[
+const certi = [
   {
     id: "101",
-    img: SheryiansFD
+    img: SheryiansFD,
   },
   {
     id: "102",
-    img: hrFrontDev
+    img: hrFrontDev,
   },
   {
     id: "103",
-    img: SoftDevMicro
+    img: SoftDevMicro,
   },
   {
     id: "106",
-    img: GithubCerti
+    img: GithubCerti,
   },
   {
     id: "107",
-    img: InternShala
+    img: InternShala,
   },
   {
     id: "108",
-    img: hrFrontDev
+    img: hrFrontDev,
   },
   {
     id: "109",
-    img: Nsdc
+    img: Nsdc,
   },
   {
     id: "110",
-    img: hrCssB
+    img: hrCssB,
   },
   {
     id: "111",
-    img: hrJsB
+    img: hrJsB,
   },
   {
     id: "112",
-    img: hrJsI
+    img: hrJsI,
   },
   {
     id: "113",
-    img: hrPsB
+    img: hrPsB,
   },
   {
     id: "114",
-    img: hrPsI
+    img: hrPsI,
   },
   {
     id: "115",
-    img: hrPythonB
+    img: hrPythonB,
   },
   {
     id: "116",
-    img:  hrReactB
-  }
-]
+    img: hrReactB,
+  },
+];
 
-export { services, technologies, experiences, webProjects,staticProjects, mobProjects, certi };
+export {
+  services,
+  technologies,
+  experiences,
+  webProjects,
+  staticProjects,
+  mobProjects,
+  certi,
+};

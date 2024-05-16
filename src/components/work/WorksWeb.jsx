@@ -17,6 +17,12 @@ const ProjectCard = ({
   source_code_link,
   source_live_link,
 }) => {
+  const handleLiveLinkClick = () => {
+    if (source_live_link !== "") {
+      window.open(source_live_link, "_blank");
+    }
+  };
+
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
@@ -46,27 +52,30 @@ const ProjectCard = ({
               />
             </div>
           </div>
-          <div className="absolute inset-0 flex justify-start items-end m-3 card-img_hover">
-            <div
-              onClick={() => window.open(source_live_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer z-20"
-            >
-              <img
-                src={live}
-                alt="source code"
-                className="w-2/3 h-2/3 object-contain hover:scale-125"
-              />
+          {source_live_link !== "" && (
+            <div className="absolute inset-0 flex justify-start items-end m-3 card-img_hover">
+              <div
+                onClick={handleLiveLinkClick}
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer z-20"
+              >
+                <img
+                  src={live}
+                  alt="source code"
+                  className="w-2/3 h-2/3 object-contain hover:scale-125"
+                />
+              </div>
             </div>
-          </div>
+          )}
         </div>
 
+        <div className="mt-5">
           <h3 className="text-white select-none font-bold text-[24px]">
             {name}
           </h3>
           <p className="mt-2 text-secondary select-none text-[14px]">
             {description}
           </p>
-       
+        </div>
 
         <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag) => (
@@ -87,9 +96,7 @@ const WorksWeb = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} select-none`}>
-          My React work
-        </p>
+        <p className={`${styles.sectionSubText} select-none`}>My React work</p>
         <h2 className={`${styles.sectionHeadText} select-none`}>
           Web Apps.
         </h2>

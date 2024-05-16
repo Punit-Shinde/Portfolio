@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { github, live } from "../assets";
 import { SectionWrapper } from "../hoc";
-import { webProjects } from "../constants";
+import { staticProjects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({
@@ -17,6 +17,12 @@ const ProjectCard = ({
   source_code_link,
   source_live_link,
 }) => {
+  const handleLiveLinkClick = () => {
+    if (source_live_link !== "") {
+      window.open(source_live_link, "_blank");
+    }
+  };
+
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
@@ -46,27 +52,30 @@ const ProjectCard = ({
               />
             </div>
           </div>
-          <div className="absolute inset-0 flex justify-start items-end m-3 card-img_hover">
-            <div
-              onClick={() => window.open(source_live_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer z-20"
-            >
-              <img
-                src={live}
-                alt="source code"
-                className="w-2/3 h-2/3 object-contain hover:scale-125"
-              />
+          {source_live_link !== "" && (
+            <div className="absolute inset-0 flex justify-start items-end m-3 card-img_hover">
+              <div
+                onClick={handleLiveLinkClick}
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer z-20"
+              >
+                <img
+                  src={live}
+                  alt="source code"
+                  className="w-2/3 h-2/3 object-contain hover:scale-125"
+                />
+              </div>
             </div>
-          </div>
+          )}
         </div>
 
+        <div className="mt-5">
           <h3 className="text-white select-none font-bold text-[24px]">
             {name}
           </h3>
           <p className="mt-2 text-secondary select-none text-[14px]">
             {description}
           </p>
-       
+        </div>
 
         <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag) => (
@@ -83,31 +92,22 @@ const ProjectCard = ({
   );
 };
 
-const WorksWeb = () => {
+const WorksStatic = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} select-none`}>
-          My React work
-        </p>
-        <h2 className={`${styles.sectionHeadText} select-none`}>
-          Web Apps.
-        </h2>
+        <p className={`${styles.sectionSubText} `}>HTML, CSS, Js</p>
+        <h2 className={`${styles.sectionHeadText}`}>Static Web-Sites.</h2>
       </motion.div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary select-none text-[17px] max-w-3xl leading-[30px]"
       >
-        Over time, I have refined my web development skills by exploring a
-        diverse range of technologies and tools. My journey began with creating
-        static web applications, which then progressed to dynamic ones.
-        Subsequently, I delved into various frameworks, culminating in the
-        development of full-stack MERN applications. This progression has
-        significantly enhanced my proficiency in web development.
+         My journey in web development began with the fundamentals: HTML, CSS, and JavaScript. I started by building static websites, focusing on crafting clean, efficient code and responsive, user-friendly designs. This solid foundation in the basics has been instrumental in my growth as a developer and continues to inform my work on more complex, dynamic applications.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-7">
-        {webProjects.map((project, index) => (
+        {staticProjects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
@@ -115,4 +115,4 @@ const WorksWeb = () => {
   );
 };
 
-export default SectionWrapper(WorksWeb, "work");
+export default SectionWrapper(WorksStatic, "work");

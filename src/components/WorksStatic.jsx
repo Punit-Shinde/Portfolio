@@ -8,6 +8,7 @@ import { SectionWrapper } from "../hoc";
 import { staticProjects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
+
 const ProjectCard = ({
   index,
   name,
@@ -60,14 +61,13 @@ const ProjectCard = ({
           </div>
         </div>
 
-        <div className="mt-5">
           <h3 className="text-white select-none font-bold text-[24px]">
             {name}
           </h3>
           <p className="mt-2 text-secondary select-none text-[14px]">
             {description}
           </p>
-        </div>
+       
 
         <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag) => (
@@ -88,14 +88,18 @@ const WorksStatic = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>HTML, CSS, Js</p>
-        <h2 className={`${styles.sectionHeadText}`}>Static Web-Sites.</h2>
+        <p className={`${styles.sectionSubText} select-none`}>
+          HTML, CSS, JavaScript
+        </p>
+        <h2 className={`${styles.sectionHeadText} select-none`}>
+          Web Sites.
+        </h2>
       </motion.div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary select-none text-[17px] max-w-3xl leading-[30px]"
       >
-         My journey in web development began with the fundamentals: HTML, CSS, and JavaScript. I started by building static websites, focusing on crafting clean, efficient code and responsive, user-friendly designs. This solid foundation in the basics has been instrumental in my growth as a developer and continues to inform my work on more complex, dynamic applications.
+        My journey in creating websites began with the fundamental building blocks: HTML, CSS, and JavaScript. Over time, I have honed my skills in these areas, starting with static websites and gradually moving towards dynamic, interactive ones. I have explored a variety of technologies and tools, and have developed proficiency in full-stack MERN applications. This continuous learning and progression have significantly enhanced my capabilities in web development.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-7">
@@ -107,4 +111,4 @@ const WorksStatic = () => {
   );
 };
 
-export default SectionWrapper(WorksStatic, "work");
+export default SectionWrapper(WorksStatic, "Swork");

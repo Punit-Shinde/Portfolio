@@ -10,11 +10,10 @@ import {
   WorksWeb,
   WorksStatic,
   WorksMob,
-  Certificates
+  Certificates,
 } from "./components";
 import Loader from "./components/partials/Loader";
 // import Certificates from "./components/Certificates";
-
 
 const App = () => {
   return (

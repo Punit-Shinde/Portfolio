@@ -18,7 +18,7 @@ const ProjectCard = ({
   source_live_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn("left", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{
           max: 45,
@@ -119,4 +119,4 @@ const WorksMob = () => {
   );
 };
 
-export default SectionWrapper(WorksMob, "work");
+export default SectionWrapper(WorksMob, "Mwork");

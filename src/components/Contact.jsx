@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-import { githubb, linkedin, behance } from "../assets";
+import { githubb, linkedin, behance, hackerrank } from "../assets";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
@@ -78,7 +78,7 @@ const Contact = () => {
           <form
             ref={formRef}
             onSubmit={handleSubmit}
-            className="mt-12  flex flex-col gap-8 "
+            className="mt-12 flex flex-col gap-8 "
           >
             <label className="flex flex-col">
               <span className="text-white select-none font-medium mb-4">
@@ -90,7 +90,7 @@ const Contact = () => {
                 value={form.name}
                 onChange={handleChange}
                 placeholder="What's your good name?"
-                className="bg-tertiary border-2 border-primary py-4 px-6 placeholder:text-secondary select-none text-white select-none rounded-lg outline-none focus:border-[#915EFF] font-medium"
+                className="bg-tertiary border-2 border-primary py-4 px-6 placeholder:text-secondary select-none text-white rounded-lg outline-none focus:border-[#915EFF] font-medium"
               />
             </label>
             <label className="flex flex-col">
@@ -133,23 +133,33 @@ const Contact = () => {
         <img
           src={linkedin}
           onClick={() =>
-            (window.location.href = "https://www.linkedin.com/in/punit-shinde/")
+            window.open("https://www.linkedin.com/in/punit-shinde/", "_blank")
           }
           className={`${styles.contactLinkActive}`}
         />
         <img
           src={githubb}
           onClick={() =>
-            (window.location.href = "https://github.com/Punit-Shinde")
+            window.open("https://github.com/Punit-Shinde", "_blank")
           }
           className={`${styles.contactLinkActive}`}
         />
         <img
           src={behance}
           onClick={() =>
-            (window.location.href = "https://www.behance.net/punitshinde")
+            window.open("https://www.behance.net/punitshinde", "_blank")
           }
           className={`${styles.contactLinkInactive}`}
+        />
+        <img
+          src={hackerrank}
+          onClick={() =>
+            window.open(
+              "https://www.hackerrank.com/profile/punitshinde",
+              "_blank"
+            )
+          }
+          className={`${styles.contactLinkActive}`}
         />
       </div>
 

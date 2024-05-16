@@ -29,8 +29,10 @@ const Hero = () => {
           </p>
           <button
             onClick={() =>
-              (window.location.href =
-                "https://drive.google.com/file/d/1uzVY9UuUXjwrnkurI41YcAhq3GJc24Rj/view?usp=drive_link")
+              window.open(
+                "https://drive.google.com/file/d/1WtcrRzxvZYSZYtjdt4TMp874KhVuPMzT/view?usp=sharing",
+                "_blank"
+              )
             }
             className="mt-8 px-3 py-2 rounded-md bg-[#915EFF] font-semibold hover:bg-transparent hover:border-2"
           >

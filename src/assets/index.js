@@ -31,6 +31,7 @@ import heroImg from "./heroImg.png";
 import behance from "./behance.png";
 import githubb from "./githubb.png";
 import linkedin from "./linkedin.png";
+import hackerrank from "./hackerrank.png";
 //react app
 import chatterBox from "./projects/chatterBox.png";
 import stepInStyle from "./projects/stepInStyle.png";
@@ -100,6 +101,7 @@ export {
   behance,
   linkedin,
   githubb,
+  hackerrank,
   // Projects
   chatterBox,
   stepInStyle,
