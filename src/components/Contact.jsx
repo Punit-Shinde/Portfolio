@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-import { githubb, linkedin, behance, hackerrank } from "../assets";
+import { githubb, linkedin, behance, hackerrank, mail } from "../assets";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
@@ -144,6 +144,9 @@ const Contact = () => {
           }
           className={`${styles.contactLinkActive}`}
         />
+        <a href="mailto:punitshinde1@gmail.com">
+          <img src={mail} className={`${styles.contactLinkActive}`} />
+        </a>
         <img
           src={behance}
           onClick={() =>

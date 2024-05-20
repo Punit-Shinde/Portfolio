@@ -3,11 +3,11 @@ import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github, live } from "../assets";
+import { github, live, backbtn } from "../assets";
 import { SectionWrapper } from "../hoc";
-import { webProjects } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
-
+import { mobProjects, staticProjects, webProjects } from "../constants";
+import { fadeIn } from "../utils/motion";
+import { useNavigate } from "react-router-dom";
 
 const ProjectCard = ({
   index,
@@ -19,7 +19,7 @@ const ProjectCard = ({
   source_live_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div>
       <Tilt
         options={{
           max: 45,
@@ -81,33 +81,52 @@ const ProjectCard = ({
   );
 };
 
-const WorksWeb = () => {
+const AllProjects = () => {
+  const navigate = useNavigate();
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} select-none`}>My React work</p>
-        <h2 className={`${styles.sectionHeadText} select-none`}>Web Apps.</h2>
+      {/* <motion.div variants={textVariant()}> */}
+      <motion.div>
+        <p className={styles.sectionSubText}>Accomplishments</p>
+        <h2 className={styles.sectionHeadText}>All Projects.</h2>
       </motion.div>
       <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary select-none text-[17px] max-w-3xl leading-[30px]"
       >
-        Over time, I have refined my web development skills by exploring a
-        diverse range of technologies and tools. My journey began with creating
-        static web applications, which then progressed to dynamic ones.
-        Subsequently, I delved into various frameworks, culminating in the
-        development of full-stack MERN applications.
+        I began my web development journey with HTML, CSS, and JavaScript, eventually moving on to dynamic, interactive applications. I’ve mastered full-stack MERN applications and am now delving into mobile development with React Native. My continuous learning approach keeps me growing in this ever-evolving field.
       </motion.p>
-
       <div className="mt-20 flex flex-wrap gap-7">
-        {webProjects.slice(0, 3).map((project, index) => (
+        {staticProjects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
-
-    
+      <div className="mt-7 flex flex-wrap gap-7">
+        {webProjects.map((project, index) => (
+          <ProjectCard key={`project-${index}`} index={index} {...project} />
+        ))}
+      </div>
+      <div className="mt-7 flex flex-wrap gap-7">
+        {mobProjects.map((project, index) => (
+          <ProjectCard key={`project-${index}`} index={index} {...project} />
+        ))}
+      </div>
+      <div className="flex justify-center items-center m-12 card-img_hover">
+        <div
+          onClick={() => {
+            navigate("/Portfolio/");
+            window.scrollTo(0, 0);
+          }}
+          className="violet-gradient w-20 h-20 rounded-full flex justify-center items-center cursor-pointer z-20"
+        >
+          <img
+            src={backbtn}
+            alt="Back Button"
+            className="w-2/3 h-2/3 object-contain  hover:scale-125"
+          />
+        </div>
+      </div>
     </>
   );
 };
 
-export default SectionWrapper(WorksWeb, "work");
+export default SectionWrapper(AllProjects, "all-projects");

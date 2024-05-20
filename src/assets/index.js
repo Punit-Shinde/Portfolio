@@ -31,6 +31,7 @@ import heroImg from "./heroImg.png";
 import behance from "./behance.png";
 import githubb from "./githubb.png";
 import linkedin from "./linkedin.png";
+import mail from "./email.png";
 import hackerrank from "./hackerrank.png";
 //react app
 import chatterBox from "./projects/chatterBox.png";
@@ -40,16 +41,12 @@ import dishDelight from "./projects/dishDelight.png";
 import pinClone from "./projects/pinClone.png";
 //static app
 import explore from "./projects/static/explore.png";
-import fashion from "./projects/static/fashion.png";
 import hulu from "./projects/static/hulu.png";
-import jacket from "./projects/static/jacket.png";
 import primier from "./projects/static/primier.png";
 import profession from "./projects/static/profession.png";
-import optical from "./projects/static/optical.png";
 import obyss from "./projects/static/obyss.png";
 import hotel from "./projects/static/hotel.png";
-import dribbble from "./projects/static/dribbble.png";
-import cotton from "./projects/static/cotton.png";
+
 // react native app
 import devilDelicacy from "./projects/native/devilDelicacy.png";
 // Certi
@@ -62,12 +59,14 @@ import hrPythonB from "./certi/Python.png";
 import hrReactB from "./certi/React Basic.png";
 
 import hrFrontDev from "./certi/Frontend Developer.png";
-import SheryiansFD from "./certi/Frontend Domination.jpg";
-import GithubCerti from "./certi/GitHub Professional Certificate.jpg";
-import IandPTraining from "./certi/Internship & Job Preparation Training.jpg";
-import SoftDevMicro from "./certi/Software Development by Microsoft and LinkedIn.jpg";
-import Nsdc from "./certi/Web Development Training - NSDC.jpg";
-import InternShala from "./certi/Web Development Training.jpg";
+import SheryiansFD from "./certi/Frontend Domination.png";
+import GithubCerti from "./certi/GitHub Professional Certificate.png";
+import IandPTraining from "./certi/Internship & Job Preparation Training.png";
+import SoftDevMicro from "./certi/Software Development by Microsoft and LinkedIn.png";
+import Nsdc from "./certi/Web Development Training NSDC.png";
+import InternShala from "./certi/Web Development Training.png";
+
+import backbtn from "./Left-Arrow.gif"
 
 export {
   logo,
@@ -100,6 +99,7 @@ export {
   r_native,
   behance,
   linkedin,
+  mail,
   githubb,
   hackerrank,
   // Projects
@@ -109,16 +109,11 @@ export {
   dishDelight,
   pinClone,
   //static sites
-  cotton,
-  dribbble,
   hotel,
   obyss,
-  optical,
   profession,
   primier,
-  jacket,
   hulu,
-  fashion,
   explore,
   //mob apps
   devilDelicacy,
@@ -136,4 +131,5 @@ export {
   SoftDevMicro,
   Nsdc,
   InternShala,
+  backbtn,
 };

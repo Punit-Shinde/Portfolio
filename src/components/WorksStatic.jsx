@@ -8,7 +8,6 @@ import { SectionWrapper } from "../hoc";
 import { staticProjects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
-
 const ProjectCard = ({
   index,
   name,
@@ -61,13 +60,12 @@ const ProjectCard = ({
           </div>
         </div>
 
-          <h3 className="text-white select-none font-bold text-[24px]">
-            {name}
-          </h3>
-          <p className="mt-2 text-secondary select-none text-[14px]">
-            {description}
-          </p>
-       
+        <h3 className="text-white select-none font-bold text-[24px]">
+          {name}
+        </h3>
+        <p className="mt-2 text-secondary select-none text-[14px]">
+          {description}
+        </p>
 
         <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag) => (
@@ -99,11 +97,11 @@ const WorksStatic = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary select-none text-[17px] max-w-3xl leading-[30px]"
       >
-        My journey in creating websites began with the fundamental building blocks: HTML, CSS, and JavaScript. Over time, I have honed my skills in these areas, starting with static websites and gradually moving towards dynamic, interactive ones. I have explored a variety of technologies and tools, and have developed proficiency in full-stack MERN applications. This continuous learning and progression have significantly enhanced my capabilities in web development.
+        I started my web development journey with HTML, CSS, and JavaScript. Over time, I transitioned from static websites to dynamic, interactive ones. My exploration of various technologies and tools led me to proficiency in full-stack MERN applications. Continuous learning has greatly enhanced my web development capabilities.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-7">
-        {staticProjects.map((project, index) => (
+        {staticProjects.slice(0, 3).map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>

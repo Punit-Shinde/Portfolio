@@ -29,8 +29,8 @@ const Certificates = () => {
         and technologies. Below, you'll find a detailed list of my
         certifications along with the issuing authority and date of completion.
       </motion.p>
-<div className="bg-[#100D25]  p-5 mt-5 rounded-xl">
-<Carousel
+      <div className="bg-[#100D25]  p-5 mt-5 rounded-xl">
+        <Carousel
           autoPlay
           autoFocus
           infiniteLoop
@@ -41,15 +41,17 @@ const Certificates = () => {
           selectedItem={0} // Ensure only one item is visible at a time
           centerSlidePercentage={100} // Ensure only one item is visible at a time
           className="crsl w-full"
-      >
-        {certi.map((certi) => (
-          <div className="h-[90%] bg-[#915eff54] border-2 border-primary rounded-xl">
-            <img key={certi.id} src={certi.img} className="h-full p-6" />
-          </div>
-        ))}
-      </Carousel>
-</div>
-      
+        >
+          {certi.map((certi) => (
+            <div
+              key={certi.id}
+              className="h-[90%] bg-[#915eff54] border-2 border-primary rounded-xl"
+            >
+              <img src={certi.img} className="h-full p-6" />
+            </div>
+          ))}
+        </Carousel>
+      </div>
     </>
   );
 };

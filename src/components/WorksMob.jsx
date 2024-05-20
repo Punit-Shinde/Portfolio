@@ -7,6 +7,7 @@ import { github, live } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { mobProjects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import { Link } from "react-router-dom";
 
 const ProjectCard = ({
   index,
@@ -101,19 +102,27 @@ const WorksMob = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary select-none text-[17px] max-w-3xl leading-[30px]"
       >
-        Over time, I have refined my mobile app development skills by exploring
-        a diverse range of technologies and tools. My journey began with
-        creating simple mobile applications, which then progressed to more
-        dynamic ones. Subsequently, I delved into various frameworks,
-        culminating in the development of full-stack applications using
-        technologies like React Native. This progression has significantly
+        My journey began with creating simple mobile applications, which then
+        progressed to more dynamic ones. Subsequently, I delved into various
+        frameworks, culminating in the development of full-stack applications
+        using technologies like React Native. This progression has significantly
         enhanced my proficiency in mobile app development.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-7">
-        {mobProjects.map((project, index) => (
+        {mobProjects.slice(0, 3).map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
+      </div>
+
+      <div className="mt-10 flex justify-center">
+        <Link
+          to="/Portfolio/all-projects"
+          onClick={() => window.scrollTo(0, 0)}
+          className="m-8 px-3 py-2 rounded-md bg-[#915EFF] font-semibold hover:bg-transparent border-2 border-transparent hover:border-white"
+        >
+          Show All Projects
+        </Link>
       </div>
     </>
   );

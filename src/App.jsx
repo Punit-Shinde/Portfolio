@@ -1,5 +1,4 @@
-import { BrowserRouter } from "react-router-dom";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import {
   About,
   Contact,
@@ -13,7 +12,7 @@ import {
   Certificates,
 } from "./components";
 import Loader from "./components/partials/Loader";
-// import Certificates from "./components/Certificates";
+import AllProjects from "./components/AllProjects"; // import the new component
 
 const App = () => {
   return (
@@ -24,16 +23,23 @@ const App = () => {
           <Navbar />
           <Hero />
         </div>
-        <About />
-        <Tech />
-        <Experience />
-        <WorksWeb />
-        <WorksStatic />
-        <WorksMob />
-        <Certificates />
-        <div className="relative z-0">
-          <Contact />
-        </div>
+        <Routes>
+          <Route path="/Portfolio" element={
+            <>
+              <About />
+              <Tech />
+              <Experience />
+              <WorksWeb />
+              <WorksStatic />
+              <WorksMob />
+              <Certificates />
+              <div className="relative z-0">
+                <Contact />
+              </div>
+            </>
+          } />
+          <Route path="/Portfolio/all-projects" element={<AllProjects />} />
+        </Routes>
       </div>
     </BrowserRouter>
   );
